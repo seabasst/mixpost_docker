@@ -25,6 +25,9 @@ Checkout the meaning for the environments variables:
 
 Replace the ``CHANGE_ME_HERE`` values for the real value and save the ``.env`` file.
 
+## If you are running Mac and have M1 or M2 chip you need to add this line into docker-compose.yml. Put it just under context:
+platform: linux/amd64
+
 ## Run the containers
 
 Pull the images and run the containers, executing the following command:
@@ -32,6 +35,7 @@ Pull the images and run the containers, executing the following command:
 ```
 docker-compose up -d
 ```
+
 
 An admin user will be created automatically. Check the mixpost container logs to find out the password, executing the following command:
 
